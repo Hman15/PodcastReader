@@ -1,7 +1,7 @@
-package com.hman.podcastreader.data.local.dao
+package com.hman.podcastreader.data.dataSource.local.dao
 
 import androidx.room.*
-import com.hman.podcastreader.data.local.entity.DownloadedAudioEntity
+import com.hman.podcastreader.data.dataSource.local.entity.DownloadedAudioEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

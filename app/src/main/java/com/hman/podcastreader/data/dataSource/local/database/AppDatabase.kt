@@ -3,9 +3,9 @@ package com.hman.podcastreader.data.dataSource.local.database
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.hman.podcastreader.data.dataSource.local.dao.ArticleDao
+import com.hman.podcastreader.data.dataSource.local.dao.DownloadedAudioDao
 import com.hman.podcastreader.data.dataSource.local.entity.ArticleEntity
-import com.hman.podcastreader.data.local.dao.DownloadedAudioDao
-import com.hman.podcastreader.data.local.entity.DownloadedAudioEntity
+import com.hman.podcastreader.data.dataSource.local.entity.DownloadedAudioEntity
 
 @Database(
         entities = [ArticleEntity::class, DownloadedAudioEntity::class],

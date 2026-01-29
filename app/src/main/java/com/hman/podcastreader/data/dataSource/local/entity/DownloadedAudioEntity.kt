@@ -1,4 +1,4 @@
-package com.hman.podcastreader.data.local.entity
+package com.hman.podcastreader.data.dataSource.local.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

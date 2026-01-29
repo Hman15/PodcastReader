@@ -1,6 +1,6 @@
 package com.hman.podcastreader.data.repository
 
-import com.hman.podcastreader.data.local.dao.DownloadedAudioDao
+import com.hman.podcastreader.data.dataSource.local.dao.DownloadedAudioDao
 import com.hman.podcastreader.data.mapper.toDomain
 import com.hman.podcastreader.data.mapper.toEntity
 import com.hman.podcastreader.domain.model.DownloadedAudio

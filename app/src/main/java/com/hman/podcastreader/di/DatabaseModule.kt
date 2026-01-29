@@ -3,8 +3,8 @@ package com.hman.podcastreader.di
 import android.content.Context
 import androidx.room.Room
 import com.hman.podcastreader.data.dataSource.local.dao.ArticleDao
+import com.hman.podcastreader.data.dataSource.local.dao.DownloadedAudioDao
 import com.hman.podcastreader.data.dataSource.local.database.AppDatabase
-import com.hman.podcastreader.data.local.dao.DownloadedAudioDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

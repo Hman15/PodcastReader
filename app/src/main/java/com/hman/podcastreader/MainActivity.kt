@@ -13,7 +13,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.content.ContextCompat
-import com.hman.podcastreader.navigation.MainScreen
+import com.hman.podcastreader.presentation.navigation.MainScreen
 import com.hman.podcastreader.ui.theme.ArtikleTheme
 import dagger.hilt.android.AndroidEntryPoint
 

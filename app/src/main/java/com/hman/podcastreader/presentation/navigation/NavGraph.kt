@@ -1,4 +1,4 @@
-package com.hman.podcastreader.navigation
+package com.hman.podcastreader.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -20,33 +20,33 @@ sealed class Screen(val route: String) {
 
 @Composable
 fun NavGraph(
-    navController: NavHostController,
-    startDestination: String = Screen.Home.route,
-    modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier
+        navController: NavHostController,
+        startDestination: String = Screen.Home.route,
+        modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier
 ) {
     NavHost(
-        navController = navController,
-        startDestination = startDestination,
-        modifier = modifier
+            navController = navController,
+            startDestination = startDestination,
+            modifier = modifier
     ) {
         composable(Screen.Home.route) {
             ArticleListScreen(
-                onArticleClick = { article ->
-                    navController.navigate(Screen.ArticleDetail.createRoute(article.id))
-                }
+                    onArticleClick = { article ->
+                        navController.navigate(Screen.ArticleDetail.createRoute(article.id))
+                    }
             )
         }
 
         composable(Screen.Audio.route) { AudioListScreen() }
 
         composable(
-            route = Screen.ArticleDetail.route,
-            arguments = listOf(navArgument("articleId") { type = NavType.StringType })
+                route = Screen.ArticleDetail.route,
+                arguments = listOf(navArgument("articleId") { type = NavType.StringType })
         ) { backStackEntry ->
             val articleId = backStackEntry.arguments?.getString("articleId") ?: return@composable
             ArticleDetailScreen(
-                articleId = articleId,
-                onNavigateBack = { navController.popBackStack() }
+                    articleId = articleId,
+                    onNavigateBack = { navController.popBackStack() }
             )
         }
     }

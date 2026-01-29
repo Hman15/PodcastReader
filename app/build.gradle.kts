@@ -13,7 +13,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.coccoc.podcastreader"
+        applicationId = "com.hman.podcastreader"
         minSdk = 33
         targetSdk = 36
         versionCode = 1
